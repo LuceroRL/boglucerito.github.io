@@ -174,6 +174,20 @@
       margin-bottom: 0;
     }
 
+    /* Segundo artículo más compacto */
+    article:nth-child(3) .article-content {
+      column-count: 2;
+      column-gap: 35px;
+      column-rule: 1px solid rgba(139, 125, 107, 0.12);
+    }
+
+    article:nth-child(3) .article-content p {
+      margin-bottom: 20px;
+      font-size: 0.92rem;
+      line-height: 1.75;
+      break-inside: avoid;
+    }
+
     /* Footer minimalista */
     footer {
       text-align: center;
@@ -238,7 +252,7 @@
       .article-header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 20px;
+        gap: 25px;
       }
 
       .author {
@@ -255,7 +269,18 @@
       }
 
       .article-content p {
-        font-size: 0.75rem;
+        font-size: 0.95rem;
+      }
+
+      /* Desactivar columnas en móvil */
+      article:nth-child(3) .article-content {
+        column-count: 1;
+        column-gap: 0;
+        column-rule: none;
+      }
+
+      article:nth-child(3) .article-content p {
+        font-size: 0.95rem;
       }
     }
   </style>
@@ -316,7 +341,7 @@
       <div class="article-header">
 
         <div class="author">
-          <img src="fotoo.png" alt="Mi foto" class="profile-pic" />
+          <img src="foto.jpeg" alt="Mi foto" class="profile-pic" />
           <span class="author-name">Lucero León</span>
         </div>
 
@@ -343,11 +368,13 @@
           I've learned that loving is much more than falling in love, and sometimes 
           stopping loving someone is also loving yourself. And in the end, if you choose 
           the person, it's to learn and find their unique way of loving.
+        
           Because a relationship is an agreement between two people, but always forming 
           a 100% of love, trust, honesty, and empathy. Of course there are difficult 
           moments, but the important thing is to always reach a mutual agreement.
+        
           And when something bothers you or you don't agree, say it. Don't keep things 
-          to yourself because you deserve to be heard—you are one in a million.
+          to yourself because you deserve to be heard you are one in a million.
         </p>
 
         <p>
@@ -363,5 +390,3 @@
   </div>
 </body>
 </html>
-
-
